@@ -1,0 +1,19 @@
+body {
+	background-color: olive;
+	text-align: center;
+}
+h5 {
+	font-style: italic;
+	margin: -2px 0 40px 0;
+}
+li { 
+	display: inline;
+}
+a {
+	color: maroon;
+}
+img { 
+	border: 3px solid maroon;
+	border-radius: 400px;
+}
+
