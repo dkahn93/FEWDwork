@@ -1,0 +1,59 @@
+body {
+	font-family: 'Lora', serif;
+}
+header {
+  background-color: #00CC99;
+  text-align: center;
+  color: white; 
+  font-size: 15px;
+  padding: 15px;
+  font-size:20px;
+}
+nav a {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+}
+nav {
+  text-align: center;
+  padding-top: 10px;
+}
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  width: 70%;
+  height: auto;
+}
+p {
+  font-size: 9px;
+  margin: 10px 20px 25px 20px;
+  padding-bottom: 25px;
+}
+.maui {
+  background-color: #99CCFF;
+}
+.reykjavik {
+  background-color: #CCFFFF;
+}
+.aspen {
+  background-color: #99CCFF;
+}
+footer {
+  text-align: center;
+  font-size: 10px;
+  margin-bottom: 15px;
+  font-weight: bold
+}
