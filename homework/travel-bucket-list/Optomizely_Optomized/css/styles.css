@@ -3,7 +3,7 @@ body {
 	background-color: #f7f7f9; 
 }
 header {
-  background-color: #000033;
+  background-image: url("header.png");
   text-align: center;
   color: white; 
   font-size: 15px;
@@ -11,7 +11,7 @@ header {
   font-size:20px;
 }
 nav a {
-  color: black;
+  color: #242424;
   text-align: center;
   padding: 10px;
   text-decoration: none;
@@ -24,9 +24,10 @@ nav {
   padding-top: 10px;
 }
 h1 {
+  color: #242424;
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   padding-top: 10px;
   padding-bottom: 5px;
   font-weight: bold;
@@ -35,22 +36,42 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto; 
-  width: 70%;
+  width: 40%;
   height: auto;
 }
 p {
-  font-size: 9px;
-  margin: 10px 20px 25px 20px;
+  font-size: 10px;
+  margin: 10px 20px 0px 20px;
   padding-bottom: 25px;
 }
+.beach img {
+  width: 65%;
+  height: auto;
+}
+.town img {
+  width: 35%;
+  height: auto;
+}
+.gondolas img {
+  width: 35%;
+  height: auto;
+}
 .maui {
-  background-color: #0066FF;
+  background-image: url("bluish-gray.jpg");
+  color: #f7f7f9;
+}
+.maui h1 {
+  color: #f7f7f9;
 }
 .reykjavik {
-  background-color: #CCFFFF;
+  background-color: #f7f7f9;
 }
 .aspen {
-  background-color: #99CCFF;
+  background-image: url("aspen_article.png");
+  color: #f7f7f9;
+}
+.aspen h1 {
+  color: #f7f7f9;
 }
 .aspen p {
 margin-bottom: 0px;
