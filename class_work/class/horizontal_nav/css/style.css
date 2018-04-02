@@ -2,3 +2,25 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 20px;
 }
+
+nav {
+	background: black;
+	text-align: center;
+}
+
+a {
+	color: #cccccc;
+	text-decoration: none;
+}
+
+li{
+	display: inline-block;
+  	padding: 25px
+}
+
+li:hover {
+  background-color: #ff7401;
+}
+
+
+

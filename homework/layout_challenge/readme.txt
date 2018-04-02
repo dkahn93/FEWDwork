@@ -1,0 +1,1 @@
+Create a new page for each layout described in the layout_challenge.pdf, starting with "two column"
