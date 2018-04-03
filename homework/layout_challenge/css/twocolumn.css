@@ -1,13 +1,6 @@
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
-html {
-  margin: 0;
-}
-body {
+body{
   width: 800px;
+  margin: 0;
 }
 main {
   display: flex;  
