@@ -11,7 +11,7 @@ main {
   height: 150px;
   margin: 10px;
 }
-.left,.right,.center {
+.left,.center,.right {
   height: 400px;
 }
 .left {
