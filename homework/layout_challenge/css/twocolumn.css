@@ -1,0 +1,37 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  margin: 0;
+}
+body {
+  width: 800px;
+}
+main {
+  display: flex;  
+}
+.container {
+  background: lightgray;
+  border: 1px solid gray;
+  height: 150px;
+  margin: 10px;
+}
+.left,.right {
+  height: 400px;
+}
+.left {
+  width: 600px;
+}
+.right {
+  width: 200px;
+}
+
+#two-column .container {
+  height: 200px;
+}
+
+#three-column .container {
+  height: 200px;
+}
