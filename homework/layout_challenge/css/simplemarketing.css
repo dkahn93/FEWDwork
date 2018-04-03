@@ -1,0 +1,18 @@
+body {
+	width: 800px
+	margin: 0;
+}
+main {
+	background-color: lightgray;
+	border: 1px solid gray;
+	
+	margin: 10px;
+}
+.right,.left {
+	height: 300px;
+	width: 300px;
+}
+.small-left,.small-center,.small-right {
+height: 100px;
+width: 50px;
+}
