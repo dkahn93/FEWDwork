@@ -1,0 +1,18 @@
+notes.txt
+
+
+alert user "hello"
+
+keyword      you define
+function     greeting () {
+	alert("Hello")
+}
+
+greeting()
+
+
+Keyword    We define
+var        greeting = "hello"
+
+var thisIsSuchACoolVariableNameThatIJustCalled = "hi"
+document.write("greeting")

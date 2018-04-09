@@ -1,0 +1,86 @@
+/* FONT FAMILY HELPERS :)
+font-family: 'Oswald', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Source Sans Pro', sans-serif; */
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	width: 1000px;
+	margin: 0 auto;
+}
+header {
+	font-family: "Merriweather";	
+}
+.navbar-with-title {
+	display: flex;
+	height: 70px;
+	background-color: black;
+	color: yellow;
+	padding-left: 25px;
+	flex-grow: 1;
+}
+.navlist {
+	font-family: "Source Sans Pro";
+	font-size: 20px;
+	padding-left: 190px;
+}
+.navlist ul{
+	margin-top: 15px;
+}
+li{
+	margin: 5px;
+	display: inline-block;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.slogan-header {
+	display: flex;
+	height: 70px;
+	background-color: lightgray;
+	border-top: 3px solid yellow;
+}
+.slogan-header h2 {
+	text-align: center;
+}
+.crossout {
+	text-decoration: line-through;
+}
+.yellow-underline {
+	text-decoration: underline yellow;
+	
+}
+.desk-bg {
+	display: flex;
+	height: 400px;
+	background-image: url("https://i.imgur.com/DKtOMV4.jpg");
+	background-size: cover;
+}
+.transparent-box {
+	display: flex;
+	justify-content: flex-end;
+	height: 20px;
+	width: 20px;
+ 	border: 2px solid black;
+}
+.minibox {
+	display: flex;
+	flex-grow: 1;
+}
+.create-profile,.find-developer,.find-designer {
+	height: 200px;
+	margin: 20px;
+}
+.find-developer {
+	border-right: 1px solid lightgray;
+	border-left: 1px solid lightgray;
+}
+.navlinks {
+	align-items: flex-end;
+}
+footer {
+	padding: 20px;
+	color: white;
+	background-color: black;
+}

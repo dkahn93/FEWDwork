@@ -1,23 +1,31 @@
-body{
-  width: 800px;
+body, html {
+  height: 100%;
   margin: 0;
 }
-main {
-  display: flex;  
+
+body {
+  width: 800px;
 }
+
+main {
+  display: flex;
+}
+
 .container {
   background: lightgray;
   border: 1px solid gray;
   height: 150px;
   margin: 10px;
 }
-.left,.right {
+
+.left, .right {
   height: 400px;
 }
+
 .left {
-  flex-grow:3;
-}
-.right {
-  flex-grow: 1;
+  width: 75%;
 }
 
+.right {
+  width: 25%;
+}

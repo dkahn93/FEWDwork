@@ -1,0 +1,31 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  width: 800px;
+}
+
+.top, .bottom {
+  display: flex;
+}
+
+.container {
+  background: lightgray;
+  border: 1px solid gray;
+  height: 150px;
+  margin: 10px;
+}
+
+.top .left, .top .right {
+  width: 100%;
+  height: 400px;
+}
+
+/*how else could I write this?*/
+
+.bottom div {
+  height: 200px;
+  width: 100%;
+}

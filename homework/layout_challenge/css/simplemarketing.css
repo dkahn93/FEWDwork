@@ -1,18 +1,25 @@
 body {
-	width: 800px
-	margin: 0;
+	
+	margin: 0 auto;
 }
-main {
+.container {
 	background-color: lightgray;
 	border: 1px solid gray;
-	
+	height: 150px;
 	margin: 10px;
 }
-.right,.left {
+.top {
+	display: flex;
+}
+.bottom {
+	display: flex;
+}
+.left,.right {
 	height: 300px;
-	width: 300px;
+	flex-grow: 1;
 }
-.small-left,.small-center,.small-right {
-height: 100px;
-width: 50px;
+.small-left,.small-center,.small-right{
+	height: 200px;
+	flex-grow: 1;
 }
+

@@ -1,0 +1,59 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .left {
+  flex-basis: 200px;
+}
+
+header .right {
+  display: flex;
+  align-items: center;
+
+  flex-basis: 500px;
+}
+
+header .tiny {
+  flex-grow: 1;
+  height: 40px;
+  margin-left: 0px;
+}
+
+main {
+  display: flex;
+}
+
+main .left {
+  flex-grow: 1;
+  height: auto;
+}
+
+main .right {
+  flex-grow: 4;
+}
+
+main .middle {
+  display: flex;
+}
+
+main .middle .left {
+  flex-grow: 4;
+  height: 250px;
+}
+
+main .middle .right {
+  flex-grow: 1;
+  height: auto;
+
+/*  how else could we do this?
+*/  flex-basis: 22  px;
+}
+
+main .bottom {
+  display: flex;
+}
+
+main .bottom .medium {
+  flex-grow: 1;
+}

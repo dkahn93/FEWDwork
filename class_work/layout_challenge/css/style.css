@@ -1,0 +1,17 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  background: lightgray;
+  border: 1px solid gray;
+}
+
+#two-column .container {
+  height: 200px;
+}
+
+#three-column .container {
+  height: 200px;
+}

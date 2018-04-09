@@ -1,0 +1,15 @@
+main {
+  display: flex;
+}
+
+.left, .right, .center {
+  height: 400px;
+}
+
+.left, .right {
+  width: 150px;
+}
+
+.center {
+  width: 500px;
+}

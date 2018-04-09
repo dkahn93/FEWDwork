@@ -1,0 +1,39 @@
+body {
+	width: 700px;
+	margin: 0 auto;
+}
+.container {
+	background-color: lightgray;
+	border: 1px solid gray;
+	margin: 10px;
+	height: 100px;
+}
+.nav-boxes {
+	display: flex;
+}
+.top {
+	display: flex;
+}
+.middle {
+	display: flex;
+}
+.grayboxnav {
+	height: 70px;
+	width: 70px;
+	margin-right: 70px;
+	flex-grow: 1;
+}
+.minibox {
+	height: 30px;
+	width:70;
+	align-self: center;
+	flex-grow: 1;
+}
+.medium-box {
+	height: 150px;
+	flex-grow: 1;
+}
+.mainnav {
+	height: 300px;
+	flex-grow: 1;
+}
