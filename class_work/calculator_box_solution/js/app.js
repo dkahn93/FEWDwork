@@ -80,7 +80,7 @@ var redButton = document.querySelector("#red");
 redButton.onclick = turnRed;
 
 function turnRed() {
-	document.querySelector("#out").style.background = "red";
+	$("#out").css("background-color", "red");
 }
 
 // blue
@@ -90,8 +90,7 @@ var blueButton = document.querySelector("#blue");
 blueButton.onclick = turnBlue;
 
 function turnBlue() {
-	document.querySelector("#out").style.background = "blue";
-}
+	$("#out").css("background-color", "blue");
 
 // reset
 
