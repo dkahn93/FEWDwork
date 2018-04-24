@@ -1,10 +1,20 @@
  var redButton = document.querySelector("#red");
- redButton.onclick = changeColor;
+ redButton.onclick = redchangeColor;
 
- function changeColor() {
-	
- document.querySelector("body").style.background = red;
+ function redchangeColor() {
+ var red = "red";
+ document.querySelector("#out").style.background = red;
+ };
+
+ var blueButton = document.querySelector("#blue");
+ blueButton.onclick = bluechangeColor;
+
+ function bluechangeColor() {
+ var blue = "blue";
+ document.querySelector("#out").style.background = blue;
  }
+
+
 
 function calculateNumbers() {
 	addTen = document.querySelector("#a10").value;

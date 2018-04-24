@@ -9,9 +9,6 @@
 	display: flex;
 }
 
-#out {
-	background: white;
-}
 .row div {
 	text-align: center;
 	width: 100px;

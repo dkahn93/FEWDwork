@@ -1,0 +1,20 @@
+body {
+  background: #ececec;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  border: none;
+  padding: 1rem;
+  margin-right: 1rem;
+}
