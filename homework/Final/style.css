@@ -1,23 +1,158 @@
+body{
+	margin: 0px;
+}
 
-header {
+header{
 	font-family: "Merriweather", serif;
+	justify-content: space-between;
 }
 .navbar-with-title {
-	height: 200px;
-	border-bottom: 20px solid green;
+	font-family: 'Berkshire Swash', cursive;
+	display: flex;
+	margin: 0px;
+	background-color: rgba(250, 250, 250, 0.7);
+	border-bottom: 15px solid rgba(241,255,237,0.7);
+}
+header.navbar-with-title {
+	height: 60px;
+}
+.title {
+	width: 85px;
+}
+nav {
+	padding-right: 100px; 
 }
 ul {
-	list-style-type: none
+	list-style-type: none;
 }
-li {
+.title h3 {
+	padding-left: 50px;
+	color: green;
+	font-size: 25px;
+	margin: 0px;
+}
+#spot {
+	padding: 20px 20px 0px 20px;
+}
+.map-section {
+	background: url("img/map-temp.png");
+	background-size: cover;
+	height: 825px;
+}
+.zipcode {
+	margin-top: 120px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.zipcode input {
+	height: 40px;
+	width: 110px;
+	padding: 10px 18px 10px 18px;
+	font-size: 20px;
+	border-radius: 5px;
+}
+.submit {
+	text-align: center;
+}
+.submit button {
+	height: 40px;
+	width: 110px;
+	border-radius: 10px;
+	background-color: A4E405;
+}
+.navbar-with-title li {
 	display: inline-block;
 	padding-left: 5px;
 	padding-right: 5px; 
-
 }
-a {
+.navbar-with-title a {
 	text-decoration: none;
 	color: green;
 	font-weight: bold;
-	font-size: 20px
+	font-size: 30px;
+	padding: 0px 15px 0px 15px
+}
+.green-key {
+	padding: 20px;
+	width: 200px;
+	border: 4px solid rgba(177,189,163,0.7);
+	border-radius: 4px;
+	background-color: rgba(222, 236, 203, 0.7);
+	margin: 150px 0px 0px 60px;
+	height: 320px;
+}
+.green-key a {
+	text-decoration: none;
+	color: black;
+}
+.green-key li {
+	padding: 10px;
+}
+.green-key ul {
+	padding-left: 0px;
+}
+.green-key h2 {
+	margin: 0 auto;
+}
+.keys {
+	padding-left: 0px;
+}
+.keys a:hover {
+	font-weight: bold;
+	color: 06BA07;
+}
+.description {
+	height: 300px;
+	width: 400px;
+	background-color: rgba(222, 236, 203, 0.7);
+	border: 4px solid rgba(177,189,163,0.7);
+	justify-content: flex-end;
+}
+.description h1 {
+	margin: 0 auto;
+	width: 285px;
+	text-align: center;
+	border-bottom: 1px solid lightgray;
+	padding: 10px 0px 15px 0px;
+	margin-bottom: 25px;
+}
+.brief {
+	margin: 20px;
+}
+.about {
+	height: 825px;
+	margin: 0px;
+}
+.about h1 {
+	margin: 0px;
+	text-align: center;
+}
+.new-spots {
+	height: 825px;
+	background-color: rgb(177,195,154);
+}
+.new-spots h1 {
+	text-align: center;
+}
+.coupons {
+	height: 825px;
+}
+.coupons h1 {
+	text-align: center;
+}
+.contact-me {
+	height: 825px;
+	background-color: rgb(177,195,154);
+}
+.contact-me h1 {
+	text-align: center;
+}
+h1 {
+	font-size: 40px;
+	padding: 20px;
+	margin: 0;
+}
+footer {
+	height: 100px;
+	background-color: black;
 }
