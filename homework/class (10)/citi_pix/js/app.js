@@ -6,5 +6,7 @@ $("#city-type").change(changeCity);
 function changeCity() {
 	var userSelection = $("#city-type").val();
 
-$("body").css(background,"../images/" + userSelection + ".jpg)")
+	$("body").removeClass();
+
+	$("body").addClass(userSelection);
 }
