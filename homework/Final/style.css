@@ -1,7 +1,6 @@
-body{
+body,html{
 	margin: 0px;
-}
-
+}	
 header{
 	font-family: "Merriweather", serif;
 	justify-content: space-between;
@@ -17,7 +16,15 @@ header.navbar-with-title {
 	height: 60px;
 }
 .title {
-	width: 85px;
+	width: 300px;
+}
+.the {
+	padding-left: 40px;
+	margin: -10px;
+}
+.green {
+	padding-left: 60px;
+	margin: -10px;
 }
 nav {
 	padding-right: 100px; 
@@ -31,12 +38,11 @@ ul {
 	font-size: 25px;
 	margin: 0px;
 }
-#spot {
-	padding: 20px 20px 0px 20px;
-}
-.map-section {
-	background: url("img/map-temp.png");
+
+#map {
+	background-image: url("img/map-temp.png");
 	background-size: cover;
+	background-attachment: fixed;
 	height: 825px;
 }
 .zipcode {
@@ -69,7 +75,7 @@ ul {
 	text-decoration: none;
 	color: green;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 25px;
 	padding: 0px 15px 0px 15px
 }
 .green-key {
@@ -119,32 +125,40 @@ ul {
 .brief {
 	margin: 20px;
 }
-.about {
+#about {
 	height: 825px;
 	margin: 0px;
+	background: linear-gradient(rgba(225,225,225,0.9), rgba(225,225,225,0.9)), url("img/backyard-bench.jpg");
+	background-size: cover;
+  	background-attachment: fixed;
 }
-.about h1 {
+#about h1 {
 	margin: 0px;
 	text-align: center;
 }
-.new-spots {
+#new-spots {
+	height: 825px;
+	background: linear-gradient(rgba(177,195,154,0.9), rgba(177,195,154,0.5)), url("img/greenimg.jpg");
+	background-size: cover;
+  	background-attachment: fixed;
+}
+#new-spots h1 {
+	text-align: center;
+}
+#coupons {
+	height: 825px;
+	background: linear-gradient(rgba(225,225,225,0.9), rgba(225,225,225,0.9)), url("img/coupon-final.jpg");
+	background-size: cover;
+  	background-attachment: fixed;
+}
+#coupons h1 {
+	text-align: center;
+}
+#contact-me {
 	height: 825px;
 	background-color: rgb(177,195,154);
 }
-.new-spots h1 {
-	text-align: center;
-}
-.coupons {
-	height: 825px;
-}
-.coupons h1 {
-	text-align: center;
-}
-.contact-me {
-	height: 825px;
-	background-color: rgb(177,195,154);
-}
-.contact-me h1 {
+#contact-me h1 {
 	text-align: center;
 }
 h1 {
@@ -154,5 +168,5 @@ h1 {
 }
 footer {
 	height: 100px;
-	background-color: black;
+	background-color: rgb(177,195,154);
 }

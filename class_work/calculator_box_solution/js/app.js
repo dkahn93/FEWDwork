@@ -91,7 +91,7 @@ blueButton.onclick = turnBlue;
 
 function turnBlue() {
 	$("#out").css("background-color", "blue");
-
+}
 // reset
 
 var outputButton = document.querySelector("#out");

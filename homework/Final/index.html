@@ -6,17 +6,25 @@
 		<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
 	</head>
 	<body>
-		<section class="map-section">
+		<section id="map">
 			<header class="navbar-with-title">
 				<div class="title">
-					<h3><span id="green">Green</span> <span id="spot">Spot</span></h3>
+					<div class="Spot">
+						<h3>Spot</h3>
+					</div>
+					<div class="The">
+						<h3>The</h3>
+					</div>
+					<div class="Green">
+						<h3>Green</h3>
+					</div>
 				</div>
 				<nav>
 					<ul>
 						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">New Spots</a></li>
-						<li><a href="#">Coupons</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#new-spots">New Spots</a></li>
+						<li><a href="#coupons">Coupons</a></li>
 						<li><a href="#">Contact Me</a></li>
 					</ul>
 				</nav>
@@ -46,29 +54,36 @@
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
 		</div> -->
+		<div class="zip-form">
 		<div class="zipcode">
 			<input type="text" placeholder="zipcode" name="zipcode"></input>
 		</div>
 		<div class="submit">
 			<button>Find a New Habit</button>
 		</div>
+	</div>
 		</section>
-		<section class="about">
+		<section id="about">
 			<h1>About</h1>
 			<p></p>
 		</section>
-		<section class="new-spots">
+		<section id="new-spots">
 			<h1>New Spots</h1>
 			<p></p>
 		</section>
-		<section class="coupons">
+		<section id="coupons">
 			<h1>Coupons</h1>
-			<p></p>
 		</section>
-		<section class="contact-me">
+		<!-- <section id="contact-me">
 			<h1>Contact Me</h1>
 			<p></p>
-		</section>
+		</section> -->
 		<footer></footer>
+		<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+		<script src="app.js"></script>
+		<script src="smooth-scroll.js"></script>
+		 <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmdGCltaxKZKv8RcSagGrDicEPal5jQXE&v=3&callback=initMap">
+    </script>
 	</body>
 	</html>
