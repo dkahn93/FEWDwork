@@ -4,12 +4,10 @@
 		<title>Green Spot</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
-		<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
-
 	</head>
 	<body>
-		<!-- <section id="map-section"> -->
+		<div id="map"></div>
+		<section id="map-section">
 			<header class="navbar-with-title">
 				<div class="title">
 					<div class="Spot">
@@ -46,8 +44,6 @@
 					</ul>
 				</div>
 			</div>
-			<div id="map"></div>
-			
 			<!-- <div class="description">
 				<h1>Green Location Name</h1>
 				<div class="brief">
@@ -59,17 +55,15 @@
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
 		</div> -->
-		<div class="escape"><a href="#about">Scroll Down v</a></div>
-		<!-- <div class="zip-form">
+		<div class="zip-form">
 		<div class="zipcode">
 			<input type="text" placeholder="zipcode" name="zipcode"></input>
-		</div> -->
-		<!-- <div class="submit">
+		</div>
+		<div class="submit">
 			<button>Find a New Habit</button>
-		</div> -->
+		</div>
 	</div>
-		<!-- </section> -->
-
+		</section>
 		<section id="about">
 			<h1>About</h1>
 			<p></p>
@@ -87,9 +81,19 @@
 		</section> -->
 		<footer></footer>
 		<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-		<script src="app.js"></script>
+		<!-- <script src="app.js"></script> -->
 		<script src="smooth-scroll.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQq-DqPdWN9o4Bwkl5whdYF_SqJPImw0E&callback=initMap"
-    async defer></script>
+		<script>
+    	var mapOptions = {
+    		center: new google.maps.latLng(37.7831,-122.4039),
+          zoom: 12,
+          mapTypeId: google.maps.mapTypeId.ROADMAP
+     	};
+        
+        new google.maps.Map(document.getElementById('map'), mapOptions);
+    </script>
+		 <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmdGCltaxKZKv8RcSagGrDicEPal5jQXE&v=3&callback=initMap">
+    </script>
 	</body>
 	</html>

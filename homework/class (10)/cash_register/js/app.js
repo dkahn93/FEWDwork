@@ -8,7 +8,7 @@ function addPrice(event) {
 	event.preventDefault()
 	var price = $("#newEntry").val()
 	$("#entries").append("<tr>" + "<td>" + price + "</td>" + "</tr>");
-	total+=parseInt(price);
+	total+=parseFloat(price);
 	$("#total").html("$" + total);
 
 

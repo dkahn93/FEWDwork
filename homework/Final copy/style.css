@@ -6,23 +6,20 @@ header{
 	justify-content: space-between;
 }
 .navbar-with-title {
-	
 	font-family: 'Berkshire Swash', cursive;
 	display: flex;
 	margin: 0px;
 	background-color: rgba(250, 250, 250, 0.7);
 	border-bottom: 15px solid rgba(241,255,237,0.7);
-	z-index: 5;
+}
+div {
+	margin: 0px;
 }
 header.navbar-with-title {
-	position: fixed;
 	height: 60px;
-	z-index: 5;
-	width: 100%;
 }
 .title {
 	width: 300px;
-	order: 0 !important;
 }
 .the {
 	padding-left: 40px;
@@ -34,7 +31,6 @@ header.navbar-with-title {
 }
 nav {
 	padding-right: 100px; 
-	order: 1 !important;
 }
 ul {
 	list-style-type: none;
@@ -46,36 +42,16 @@ ul {
 	margin: 0px;
 }
 #map {
-    height: 100%;
-    
-}
-.escape {
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	margin-top: -150px;
-	position: relative;
-	background: lightgray;
-	width: 40px;
-	border-radius: 10px;
-	padding: 5px;
-}
-.escape a {
-	text-decoration: none;
-	font-weight: bolder;
-	color: black;
-}
-.escape:hover {
-	padding: 10px;
-	border-radius: 15px;
+  height: 400px;
+  width: 100%;
 }
 
 #map-section {
-	/*background-image: url("img/map-temp.png");*/
+	/*background-image: url("img/map-temp.png");
 	background-size: cover;
 	background-attachment: fixed;
 	height: 825px;
-	width: 100%;
+	width: 100%;*/
 }
 .zipcode {
 	margin-top: 120px;
@@ -106,12 +82,11 @@ ul {
 .navbar-with-title a {
 	text-decoration: none;
 	color: green;
-	/*font-weight: bold;*/
+	font-weight: bold;
 	font-size: 20px;
 	padding: 0px 15px 0px 15px
 }
 .green-key {
-	position: absolute;
 	padding: 20px;
 	width: 200px;
 	border: 4px solid rgba(177,189,163,0.7);
@@ -119,7 +94,6 @@ ul {
 	background-color: rgba(222, 236, 203, 0.7);
 	margin: 150px 0px 0px 60px;
 	height: 320px;
-	z-index: 5;
 }
 .green-key a {
 	text-decoration: none;
@@ -168,7 +142,6 @@ ul {
 }
 #about h1 {
 	margin: 0px;
-	padding-top: 90px; 
 	text-align: center;
 }
 #new-spots {
@@ -230,34 +203,3 @@ footer {
 		margin-left: -90px;
 	}
 }
-@media screen and (max-width: 930px) {
-header.navbar-with-title {
-	flex: 2;
-	height: 60px;
-}
-.title {
-	flex: 1;
-
-}
-
-/*map options*/
-.map-control {
-        background-color: #fff;
-        border: 1px solid #ccc;
-        box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
-        font-family: 'Roboto','sans-serif';
-        margin: 10px;
-        padding-right: 5px;
-        /* Hide the control initially, to prevent it from appearing
-           before the map loads. */
-        display: none;
-      }
-      /* Display the control once it is inside the map. */
-      #map .map-control { display: block; }
-
-      .selector-control {
-        font-size: 14px;
-        line-height: 30px;
-        vertical-align: baseline;
-      }
-  
