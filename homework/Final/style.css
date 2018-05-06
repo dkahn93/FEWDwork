@@ -47,6 +47,7 @@ ul {
 }
 #map {
     height: 100%;
+    background-color: 
     
 }
 .escape {
@@ -76,6 +77,8 @@ ul {
 	background-attachment: fixed;
 	height: 825px;
 	width: 100%;
+	background-color: green;
+	z-index: 5;
 }
 .zipcode {
 	margin-top: 120px;
@@ -118,7 +121,7 @@ ul {
 	border-radius: 4px;
 	background-color: rgba(222, 236, 203, 0.7);
 	margin: 150px 0px 0px 60px;
-	height: 320px;
+	height: 350px;
 	z-index: 5;
 }
 .green-key a {
@@ -178,6 +181,7 @@ ul {
   	background-attachment: fixed;
 }
 #new-spots h1 {
+	padding-top: 80px;
 	text-align: center;
 }
 #coupons {
@@ -187,6 +191,7 @@ ul {
   	background-attachment: fixed;
 }
 #coupons h1 {
+	padding-top: 80px;
 	text-align: center;
 }
 #contact-me {
@@ -246,7 +251,7 @@ header.navbar-with-title {
         border: 1px solid #ccc;
         box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
         font-family: 'Roboto','sans-serif';
-        margin: 10px;
+        margin: 100px;
         padding-right: 5px;
         /* Hide the control initially, to prevent it from appearing
            before the map loads. */
