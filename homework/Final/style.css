@@ -2,12 +2,12 @@ body,html{
 	margin: 0px;
 }	
 header{
-	font-family: "Merriweather", serif;
+	/*font-family: "Merriweather", serif;*/
 	justify-content: space-between;
 }
 .navbar-with-title {
 	
-	font-family: 'Berkshire Swash', cursive;
+	/*font-family: 'Berkshire Swash', cursive;*/
 	display: flex;
 	margin: 0px;
 	background-color: rgba(250, 250, 250, 0.7);
@@ -21,6 +21,7 @@ header.navbar-with-title {
 	width: 100%;
 }
 .title {
+	font-family: 'Berkshire Swash', cursive;
 	width: 300px;
 	order: 0 !important;
 }
@@ -33,6 +34,7 @@ header.navbar-with-title {
 	margin: -10px;
 }
 nav {
+	font-weight: none;
 	padding-right: 100px; 
 	order: 1 !important;
 }
@@ -165,6 +167,7 @@ ul {
 #about {
 	height: 825px;
 	margin: 0px;
+	padding-top: 30px;
 	background: linear-gradient(rgba(225,225,225,0.9), rgba(225,225,225,0.9)), url("img/backyard-bench.jpg");
 	background-size: cover;
   	background-attachment: fixed;
@@ -173,6 +176,13 @@ ul {
 	margin: 0px;
 	padding-top: 90px; 
 	text-align: center;
+}
+#about p {
+	font-family: 'Do Hyeon', sans-serif;
+	text-shadow: 4px 4px 4px #aaa;
+	color: green;
+	text-align: center;
+	font-size: 18px;
 }
 #new-spots {
 	height: 825px;
@@ -245,24 +255,4 @@ header.navbar-with-title {
 
 }
 
-/*map options*/
-.map-control {
-        background-color: #fff;
-        border: 1px solid #ccc;
-        box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
-        font-family: 'Roboto','sans-serif';
-        margin: 100px;
-        padding-right: 5px;
-        /* Hide the control initially, to prevent it from appearing
-           before the map loads. */
-        display: none;
-      }
-      /* Display the control once it is inside the map. */
-      #map .map-control { display: block; }
-
-      .selector-control {
-        font-size: 14px;
-        line-height: 30px;
-        vertical-align: baseline;
-      }
   

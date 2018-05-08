@@ -28,7 +28,7 @@ $.ajax({
   success: function(stations) {
   
   stations.forEach(function(element){
-console.log(element)
+  	
 //element is a single element
 
 })
@@ -36,6 +36,8 @@ console.log(element)
 
 
   }
+
+
 });
 
 

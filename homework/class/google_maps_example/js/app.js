@@ -1,16 +1,23 @@
 // As a User
 // When I view the site
 // I see a map
-   var map;
       function initMap() {
+      	var NewYorkCity = {lat: 40.763750, lng: -73.9919926};
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 40.7461231, lng: -73.9919926},
-          zoom: 12.5
+          zoom: 12.5,
+          mapTypeId: 'terrain'
+        });
+
+        var bikeLayer = new google.maps.BicyclingLayer();
+        bikeLayer.setMap(map);
+
+        var marker = new google.maps.Marker({
+          position: NewYorkCity,
+          map: map,
         });
       }
       
-
-// As a User
 // When I view the site
 // I expect to only see NYC
 
