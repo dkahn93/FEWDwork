@@ -1,0 +1,24 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#container {
+  font-family: Helvetica;
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+  border: 1px solid lightgray;
+  margin-top: 100px;
+  padding: 25px;
+}
+
+.bikes li {
+  margin-top: 20px;
+}
