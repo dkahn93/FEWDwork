@@ -59,10 +59,11 @@ function initMap() {
          
       $.ajax({
       type: 'GET',
-      url: 'https://api.myjson.com/bins/1dtq2q',
-      success: function (resp) {
-console.log(resp)
-      resp.elements.forEach(dropMarker)
+      dataType:'json',
+      url: 'https://raw.githubusercontent.com/dkahn93/dkahn93.github.io/master/homework/Final/drinking_fountains.json',
+      success: function (waterFountains) {
+console.log(waterFountains)
+      waterFountains.elements.forEach(dropMarker)
 
       function dropMarker(waterFountain) {
         new google.maps.Marker({
@@ -71,7 +72,7 @@ console.log(resp)
         });
       }
     },
-  });
+  })
 
       // Data for the markers consisting of a name, a LatLng and a zIndex for the
       // order in which these markers should display on top of each other.

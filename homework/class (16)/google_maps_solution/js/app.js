@@ -64,50 +64,6 @@
 //     map: map
 //   });
 
-  $(".markers-button").click(function(){
-    new google.maps.Marker({
-      position: {lat: 40.7228, lng: -74.0060},
-      map: map
-    });
-    new google.maps.Marker({
-      position: {lat: 40.7328, lng: -74.0060},
-      map: map
-    });
-    new google.maps.Marker({
-      position: {lat: 40.7028, lng: -74.0060},
-      map: map
-    });
-  })
-}
-
-// Unbelievable, Seriously???? Bonus
-
-// function initMap() {
-//   var mapElem = document.getElementById("map");
-//   var nyc = {lat: 40.7128, lng: -74.0060};
-
-//   var map = new google.maps.Map(mapElem, {
-//     zoom: 13,
-//     center: nyc,
-//     mapTypeId: "terrain"
-//   });
-
-//   $.ajax({
-//       type: 'GET',
-//       url: 'https://api.citybik.es/v2/networks/citi-bike-nyc',
-//       success: function (resp) {
-
-//       resp.network.stations.forEach(dropMarker)
-
-//       function dropMarker(station) {
-//         new google.maps.Marker({
-//           position: {lat: station.latitude, lng: station.longitude},
-//           map: map
-//         });
-//       }
-//     },
-//   });
-
 //   $(".markers-button").click(function(){
 //     new google.maps.Marker({
 //       position: {lat: 40.7228, lng: -74.0060},
@@ -123,3 +79,47 @@
 //     });
 //   })
 // }
+
+// Unbelievable, Seriously???? Bonus
+
+function initMap() {
+  var mapElem = document.getElementById("map");
+  var nyc = {lat: 40.7128, lng: -74.0060};
+
+  var map = new google.maps.Map(mapElem, {
+    zoom: 13,
+    center: nyc,
+    mapTypeId: "terrain"
+  });
+
+  $.ajax({
+      type: 'GET',
+      url: 'https://api.citybik.es/v2/networks/citi-bike-nyc',
+      success: function (resp) {
+
+      resp.network.stations.forEach(dropMarker)
+console.log(resp)
+      function dropMarker(station) {
+        new google.maps.Marker({
+          position: {lat: station.latitude, lng: station.longitude},
+          map: map
+        })
+      }
+    }                                                                              
+ 
+
+  $(".markers-button").click(function(){
+    new google.maps.Marker({
+      position: {lat: 40.7228, lng: -74.0060},
+      map: map
+    });
+    new google.maps.Marker({
+      position: {lat: 40.7328, lng: -74.0060},
+      map: map
+    });
+    new google.maps.Marker({
+      position: {lat: 40.7028, lng: -74.0060},
+      map: map
+    });
+  })
+}
