@@ -8,6 +8,7 @@ $(document).ready(function(){
 });
 
 
+
 // $.ajax({
 //   type: 'GET',
 //   url: 'https://maps.googleapis.com/maps/api/place/nearbysearch/json',

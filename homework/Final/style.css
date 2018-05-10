@@ -19,6 +19,7 @@ header.navbar-with-title {
 	height: 60px;
 	z-index: 5;
 	width: 100%;
+	margin-left: 0px; 
 }
 .title {
 	font-family: 'Berkshire Swash', cursive;
@@ -125,7 +126,7 @@ ul {
 	background-color: rgba(222, 236, 203, 0.7);
 	margin: 150px 0px 0px 60px;
 	height: 310px;
-	z-index: 5;
+	z-index: 4;
 }
 .green-key a {
 	text-decoration: none;

@@ -74,6 +74,8 @@ console.log(waterFountains)
     },
   })
 
+}
+
       // Data for the markers consisting of a name, a LatLng and a zIndex for the
       // order in which these markers should display on top of each other.
       
@@ -166,4 +168,4 @@ console.log(waterFountains)
 //                               'Error: The Geolocation service failed.' :
 //                               'Error: Your browser doesn\'t support geolocation.');
 //         infoWindow.open(map);
-  }
+  
