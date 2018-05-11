@@ -62,19 +62,19 @@ function initMap() {
       dataType:'json',
       url: 'https://raw.githubusercontent.com/dkahn93/dkahn93.github.io/master/homework/Final/drinking_fountains.json',
       success: function (waterFountains) {
-console.log(waterFountains)
+
       waterFountains.elements.forEach(dropMarker)
 
       function dropMarker(waterFountain) {
         new google.maps.Marker({
-          position: {lat: elements.lat, lng: elements.lon},
+          position: {lat: waterFountain.lat, lng: waterFountain.lon},
           map: map
         });
       }
     },
   })
 
-}
+
 
       // Data for the markers consisting of a name, a LatLng and a zIndex for the
       // order in which these markers should display on top of each other.
@@ -139,33 +139,37 @@ console.log(waterFountains)
 //           });
 //         }
 //       }
-//         infoWindow = new google.maps.InfoWindow;
+        infoWindow = new google.maps.InfoWindow;
 
-//         // Try HTML5 geolocation.
-//         if (navigator.geolocation) {
-//           navigator.geolocation.getCurrentPosition(function(position) {
-//             var pos = {
-//               lat: position.coords.latitude,
-//               lng: position.coords.longitude
-//             };
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
 
-//             infoWindow.setPosition(pos);
-//             infoWindow.setContent('You are here!');
-//             infoWindow.open(map);
-//             map.setCenter(pos);
-//           }, function() {
-//             handleLocationError(true, infoWindow, map.getCenter());
-//           });
-//         } else {
-//           // Browser doesn't support Geolocation
-//           handleLocationError(false, infoWindow, map.getCenter());
-//         }
-//       }
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('You are here!');
+            infoWindow.open(map);
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
 
-//       function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-//         infoWindow.setPosition(pos);
-//         infoWindow.setContent(browserHasGeolocation ?
-//                               'Error: The Geolocation service failed.' :
-//                               'Error: Your browser doesn\'t support geolocation.');
-//         infoWindow.open(map);
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+
+
+        
+}
   

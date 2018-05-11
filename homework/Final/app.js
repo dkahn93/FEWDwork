@@ -7,17 +7,24 @@ $(document).ready(function(){
     });
 });
 
+$("#burger").click(toggleNav);
 
+function toggleNav() {
+	$(".nav-mobile-items").slideToggle();
+}
 
-// $.ajax({
-//   type: 'GET',
-//   url: 'https://maps.googleapis.com/maps/api/place/nearbysearch/json',
-//   success: function(element) {
-//   	console.log(element)
-//   },
-//   headers: {
-//     "Authorization": "Bearer " + "AIzaSyD9VmgKeL2MWwxRSDYpMRiHvY92k8LgNg0"
-//   },
-// 	xhrFields: { withCredentials: true }
-// });
+$("#greenkey").click(toggleKeys);
 
+function toggleKeys() {
+	$(".green-key").slideToggle();
+}
+
+$(window).resize(hideNav);
+
+function hideNav() {
+	var width = $(window).width();
+
+	if (width > 1024) {
+		$(".nav-mobile-items").hide();
+	}
+}
