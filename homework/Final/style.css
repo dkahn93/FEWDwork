@@ -252,7 +252,7 @@ div.burger-types {
 .nav-mobile-items {
 	background-color: rgba(241,255,237,0.7);
 	margin-top: 75px;
-	height: 200px;
+	height: 210px;
 	display: none;
 	text-align: center;
 }
@@ -281,12 +281,7 @@ div.burger-types {
 	}
 }
 
-@media screen and (max-width: 1024px) {
-	.title h3 {
-		font-size: 8px;
-		padding-left: 10px;
-		margin: 4px;
-}
+
 	/*nav{
 		margin-left: -30px;
 	}
