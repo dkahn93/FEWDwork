@@ -265,8 +265,12 @@ div.burger-types {
 @media screen and (max-width: 1024px) {
 	.burger-types {
 		display: block;
-		margin-left: -40px;
+		margin-left: -55px;
 		padding-right: 15px;
+	}
+	.title h3 {
+		padding-left: 0px;
+		margin: 4px;
 	}
 	.green-key {
 		display: none;
