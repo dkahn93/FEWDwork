@@ -233,14 +233,17 @@ footer {
 	background-color: rgb(177,195,154);
 }
 
-	
+
 #burger-types {
-	padding: 15px;
+	margin: 10px;
 	cursor: pointer;
-}
-.burger-types {
-	padding-left: 10px;
 	display: none;
+}
+#burger, #green-key {
+	padding: 15px;
+}
+div.burger-types {
+	margin-top: 15px;
 }
 .nav-mobile-items li {
 		padding-bottom: 10px;
@@ -261,11 +264,9 @@ footer {
 
 @media screen and (max-width: 1024px) {
 	.burger-types {
-		margin-top: 15px; 
 		display: block;
-	}
-	#burger, #greenkey {
-		padding: 15px;
+		margin-left: -40px;
+		padding-right: 15px;
 	}
 	.green-key {
 		display: none;
