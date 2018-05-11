@@ -104,41 +104,44 @@ function initMap() {
       //   [40.792319, -73.963266]
 
       // ];
-// $("#waterFountains").click(setMarkers)
-//       function setMarkers() {
-//         // Adds markers to the map.
+$("#waterFountains").click(setMarkers)
+      function setMarkers() {
+        // Adds markers to the map.
 
-//         // Marker sizes are expressed as a Size of X,Y where the origin of the image
-//         // (0,0) is located in the top left of the image.
+        // Marker sizes are expressed as a Size of X,Y where the origin of the image
+        // (0,0) is located in the top left of the image.
 
-//         // Origins, anchor positions and coordinates of the marker increase in the X
-//         // direction to the right and in the Y direction down.
-//         var image = {
-//           url: 'img/drinking-water.png',
-//           // This marker is 20 pixels wide by 32 pixels high.
-//           size: new google.maps.Size(20, 24),
-//           // The origin for this image is (0, 0).
-//           origin: new google.maps.Point(0, 0),
-//           // The anchor for this image is the base of the flagpole at (0, 32).
-//           anchor: new google.maps.Point(0, 24)
-//         };
-//         // Shapes define the clickable region of the icon. The type defines an HTML
-//         // <area> element 'poly' which traces out a polygon as a series of X,Y points.
-//         // The final coordinate closes the poly by connecting to the first coordinate.
-//         var shape = {
-//           coords: [1, 1, 1, 20, 18, 20, 18, 1],
-//           type: 'poly'
-//         };
-//         for (var i = 0; i < waterfountains.length; i++) {
-//           var waterfountain = waterfountains[i];
-//           var marker = new google.maps.Marker({
-//             position: {lat: waterfountain[0], lng: waterfountain[1]},
-//             map: map,
-//             icon: image,
-//             shape: shape,
-//           });
-//         }
-//       }
+        // Origins, anchor positions and coordinates of the marker increase in the X
+        // direction to the right and in the Y direction down.
+        var image = {
+          url: 'img/drinking-water.png',
+          // This marker is 20 pixels wide by 32 pixels high.
+          size: new google.maps.Size(20, 24),
+          // The origin for this image is (0, 0).
+          origin: new google.maps.Point(0, 0),
+          // The anchor for this image is the base of the flagpole at (0, 32).
+          anchor: new google.maps.Point(0, 24)
+        };
+        // Shapes define the clickable region of the icon. The type defines an HTML
+        // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+        // The final coordinate closes the poly by connecting to the first coordinate.
+        var shape = {
+          coords: [1, 1, 1, 20, 18, 20, 18, 1],
+          type: 'poly'
+        };
+        for (var i = 0; i < waterfountains.length; i++) {
+          var waterfountain = waterfountains[i];
+          var marker = new google.maps.Marker({
+            position: {lat: waterfountain[0], lng: waterfountain[1]},
+            map: map,
+            icon: image,
+            shape: shape,
+          });
+        }
+      }
+
+
+
         infoWindow = new google.maps.InfoWindow;
 
         // Try HTML5 geolocation.
@@ -170,6 +173,6 @@ function initMap() {
         infoWindow.open(map);
 
 
-        
+
 }
   
