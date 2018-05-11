@@ -270,7 +270,7 @@ div.burger-types {
 	}
 	.title h3 {
 		font-size: 16px;
-		padding-left: 0px;
+		padding-left: 10px;
 		margin: 4px;
 	}
 	.green-key {
@@ -279,6 +279,13 @@ div.burger-types {
 	nav {
 	display: none;
 	}
+}
+
+@media screen and (max-width: 1024px) {
+	.title h3 {
+		font-size: 12px;
+		padding-left: 10px;
+		margin: 4px;
 }
 	/*nav{
 		margin-left: -30px;
