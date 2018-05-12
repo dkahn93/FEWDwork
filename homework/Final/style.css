@@ -265,6 +265,7 @@ footer {
 @media screen and (max-width: 1024px) {
 	#burger, #greenkey {
 		display: inline-block;
+		cursor: pointer;
 	}
 	.burger-types {
 		display: block;
