@@ -1,12 +1,15 @@
-body,html{
+body{
 	margin: 0px;
+	margin-top: 60px;
+	background-color: rgba(241,255,237,1);
 }	
 header{
 	/*font-family: "Merriweather", serif;*/
 	justify-content: space-between;
 }
 .navbar-with-title {
-	
+	position: fixed;
+	top: 0;
 	/*font-family: 'Berkshire Swash', cursive;*/
 	display: flex;
 	margin: 0px;
@@ -15,7 +18,7 @@ header{
 	z-index: 5;
 }
 header.navbar-with-title, .nav-mobile-items {
-	position: fixed;
+	
 	height: 60px;
 	z-index: 5;
 	width: 100%;
