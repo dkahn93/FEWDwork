@@ -19,6 +19,16 @@ function toggleKeys() {
 	$(".green-key").slideToggle();
 }
 
+$(window).resize(showKey);
+
+function showKey() {
+	var width = $(window).width();
+
+	if (width < 1024) {
+		$(".green-key").show();
+	}
+}
+
 $(window).resize(hideNav);
 
 function hideNav() {

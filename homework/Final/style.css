@@ -261,6 +261,7 @@ ul {
 	margin: 20px;
 }
 #about {
+	
 	height: 825px;
 	margin: 0px;
 	padding-top: 30px;
@@ -274,11 +275,26 @@ ul {
 	text-align: center;
 }
 #about p {
+	display: flex;
 	font-family: 'Do Hyeon', sans-serif;
-	text-shadow: 4px 4px 4px #aaa;
-	color: green;
+	padding-bottom: 500px;
+	color: black;
 	text-align: center;
 	font-size: 18px;
+	margin: 10px 180px 0px 180px;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 200px;
+}
+
+#call-to-action{
+	font-family: 'Do Hyeon', sans-serif;
+	border-top: 4px solid black ;
+	color: black;
+	font-size: 12px;
+	margin: 10px 180px 0px 180px;
 }
 #new-spots {
 	height: 825px;
@@ -317,8 +333,14 @@ h1 {
 	background-color: rgba(250, 250, 250, 0.7);
 }*/
 footer {
-	height: 100px;
+	height: 60px;
 	background-color: rgb(177,195,154);
+}
+
+footer p {
+	padding-top: 15px;
+	margin-top: 0px;
+	padding-left: 30px; 
 }
 
 
@@ -342,13 +364,17 @@ footer {
 	height: 210px;
 	display: none;
 	text-align: center;
+	position: fixed;
+	top: 0;
 
 }
 .nav-mobile-items a {
 	text-decoration: none;
 	color: green;
 	font-size: 20px;
+
 }
+
 
 .gm-style-iw {
 
