@@ -256,7 +256,7 @@ function initMap() {
             };
 
             infoWindow.setPosition(pos);
-            infoWindow.setContent('You are here!');
+            infoWindow.setContent('<p style="font-weight:bold;color:green;margin:0;">You are here!</p>');
             infoWindow.open(map);
             map.setCenter(pos);
         }, function() {
