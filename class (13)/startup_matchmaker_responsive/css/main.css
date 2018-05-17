@@ -142,7 +142,7 @@ footer {
 #burger {
 	padding-top: 20px;
 	display: none;
-	cursor: po
+	cursor: pointer;
 }
 @media screen and (max-width: 1024px){
 	.cta-container {
