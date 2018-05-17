@@ -1,7 +1,7 @@
 body{
 	margin: 0px;
-	margin-top: 60px;
-	background-color: rgba(241,255,237,1);
+	margin-top: 70px;
+	/*background-color: #66FF66;*/
 }	
 header{
 	/*font-family: "Merriweather", serif;*/
@@ -13,10 +13,18 @@ header{
 	/*font-family: 'Berkshire Swash', cursive;*/
 	display: flex;
 	margin: 0px;
-	background-color: rgba(250, 250, 250, 0.7);
+	/*background-color: rgba(250, 250, 250, 0.7);*/
+	background-color: #CEFBCF;
 	border-bottom: 15px solid rgba(241,255,237,0.7);
 	z-index: 5;
+	transition: background-color 2s ease 0s;
 }
+
+.navbar-with-title.opaque { 
+	background-color: rgba(250, 250, 250, 0.7);
+	transition: background-color 2s ease 0s;
+	}
+
 header.navbar-with-title, .nav-mobile-items {
 	
 	height: 60px;
@@ -211,7 +219,7 @@ ul {
 	border-radius: 4px;
 	background-color: rgba(222, 236, 203, 0.7);
 	margin: 150px 0px 0px 60px;
-	height: 180px;
+	height: 200px;
 	z-index: 4;
 }
 .green-key a {
@@ -340,6 +348,10 @@ footer {
 	text-decoration: none;
 	color: green;
 	font-size: 20px;
+}
+
+.gm-style-iw {
+
 }
 
 @media screen and (max-width: 1024px) {

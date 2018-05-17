@@ -54,3 +54,20 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+// $(document).ready(function(){
+//       $(window).scroll(function() { // check if scroll event happened
+//         if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+//           $(".navbar-with-title").css("background-color", "rgba(250, 250, 250, 0.7)"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+//         } else {
+//           $(".navbar-with-title").css("background-color", "#66FF66"); // if not, change it back to transparent
+//         }
+//       });
+//     });
+$(window).scroll(function() {
+    if($(this).scrollTop() > 300) {
+        $('.navbar-with-title').addClass('opaque');
+    } else {
+        $('.navbar-with-title').removeClass('opaque');
+    }
+});
