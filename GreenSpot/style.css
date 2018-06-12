@@ -401,6 +401,7 @@ footer p {
 	}
 	.green-key {
 		display: none;
+		height: 200px;
 	}
 	nav {
 	display: none;
