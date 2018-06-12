@@ -105,7 +105,7 @@ function initMap() {
         $.ajax({
             type: 'GET',
             dataType: 'json',
-            url: 'https://raw.githubusercontent.com/dkahn93/dkahn93.github.io/master/homework/Final/drinking_fountains.json',
+            url: 'https://raw.githubusercontent.com/dkahn93/dkahn93.github.io/master/GreenSpot/drinking_fountains.json',
             success: function(waterFountains) {
 
                 waterFountains.elements.forEach(dropMarker)
