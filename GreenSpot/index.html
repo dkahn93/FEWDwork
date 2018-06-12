@@ -1,0 +1,131 @@
+<DOCTYPE html>
+	<html>
+	<head>
+		<title>Green Spot</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#EDFCE9">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+
+
+	</head>
+	<body>
+		<!-- <section id="map-section"> -->
+			<header class="navbar-with-title">
+				<div class="title">
+					<div class="Spot">
+						<h3>Spot</h3>
+					</div>
+					<div class="The">
+						<h3>The</h3>
+					</div>
+					<div class="Green">
+						<h3>Green</h3>
+					</div>
+				</div>
+				<nav>
+					<ul class="embolden">
+						<li><a href="#map">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#new-spots">New Spots</a></li>
+						<li><a href="#coupons">Coupons</a></li>
+						<li><div id="contact"><a href="#">Think something is missing?</br>Contact Me!</a></div></li>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+  <div class="modal-header">
+    <span class="close">&times;</span>
+    <h1>Contact Me</h1>
+  </div>
+  <div class="modal-body">
+   <form>
+   	Name: <input type="text">
+   	</br>Comment: </br>
+   	<textarea style="width:250px;height:150px;">
+    </textarea>
+	</br>
+    <input type="submit" class="submit">
+</form>
+   </form>
+  </div>
+  <div class="modal-footer">
+    <h3></h3>
+  </div>
+</div>
+
+</div>
+<!-- Modal content -->
+
+
+					</ul>
+				</nav>
+				<div class="burger-types">
+					<span id="greenkey"><img src="img/green-key.png" title="a literal green key to hide/show the Green Key" alt=""><!-- <div class="hideShow">hide/show</div> --></span>
+					<span id="burger"><img src="img/hamburger-icon.png" title="Veggie Burger" alt=""></span>
+				</div>
+			
+			</header>
+			
+
+			<div class="green-key">
+				<h2>Green Key</h2>
+					<ul>
+						<div id="vegetarian"><li><a href="#">Vegetarian Restaurants</a></li></div>
+						<div id="eRecycling"><li><a href="#">Electronic Recycling Stations</a></li></div>
+						<div id="waterFountains"><li><a href="#">Drinking Fountains</a></li></div>
+						<div id="foodCoops"><li><a href="#">Food Co-ops</a></li></div>
+		
+      </div>
+						
+					</ul>
+			</div>
+			<div class="nav-mobile-items">
+					<ul>
+						<li><a href="#map">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#new-spots">New Spots</a></li>
+						<li><a href="#coupons">Coupons</a></li>
+						<li><div id="contact"><a href="#">Am I missing something here? </br>Contact me!</a></div></li>
+					</ul>
+				</div>
+					
+				
+			<div id="map"></div>
+			
+			
+	</div>
+		<!-- </section> -->
+
+		<section id="about">
+			<h1>About</h1>
+			<p>Founded in the Summer of 2018, Spot the Green will find near you a treasure of healthy and locally sourced food, ready-to-bottle water, and more. If you're looking for a way to change up your lifestyle, keep this website handy. More features coming soon.</p>
+				
+			<div id="call-to-action">Side Note: If you're looking for a way to get involved, I'm looking for you. The public drinking fountains that I have mapped out in the city are good and all, but what if you're not near one? What if they're turned off? That's why I'm looking to build a database on all shops that offer free water (without having to ask for it), beit by water tank or through a small spout by the counter (I would expect most of these locations to be in coffee shops, but not all). When you find a location, please  click the contact button on the nav and send your info.</div>
+		</section>
+		<section id="new-spots">
+			<h1>New Spots</h1>
+			<h2>More Details Coming Soon!</h2>
+		</section>
+		<section id="coupons">
+			<h1>Coupons</h1>
+			<h2>Coming Soon!</h2>
+		</section>
+		<!-- <section id="contact-me">
+			<h1>Contact Me</h1>
+			<p></p>
+		</section> -->
+		<footer><p>© Copyright 2018 David Kahn. All rights reserved.</p></footer>
+		<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+		<!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> -->
+    	
+		<script src="mapcanvas.js"></script>
+		<script src="app.js"></script>
+		<script src="smooth-scroll.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQq-DqPdWN9o4Bwkl5whdYF_SqJPImw0E&callback=initMap"
+    async defer></script>
+
+	</body>
+	</html>

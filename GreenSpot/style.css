@@ -1,0 +1,448 @@
+body{
+	margin: 0px;
+	margin-top: 70px;
+	/*background-color: #66FF66;*/
+}	
+header{
+	/*font-family: "Merriweather", serif;*/
+	justify-content: space-between;
+}
+.navbar-with-title {
+	position: fixed;
+	top: 0;
+	/*font-family: 'Berkshire Swash', cursive;*/
+	display: flex;
+	margin: 0px;
+	/*background-color: rgba(250, 250, 250, 0.7);*/
+	background-color: #CEFBCF;
+	border-bottom: 15px solid rgba(241,255,237,0.7);
+	z-index: 5;
+	transition: background-color 2s ease 0s;
+}
+
+.navbar-with-title.opaque { 
+	background-color: rgba(250, 250, 250, 0.7);
+	transition: background-color 2s ease 0s;
+	}
+
+header.navbar-with-title, .nav-mobile-items {
+	
+	height: 60px;
+	z-index: 5;
+	width: 100%;
+	margin-left: 0px; 
+}
+#contact a {
+	font-size: 12px;
+	text-align: center;
+	display: block;
+	text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    }
+
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {
+	background-color: #cecccc;
+	padding: 2px 16px;
+}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.title {
+	font-family: 'Berkshire Swash', cursive;
+	width: 300px;
+	order: 0 !important;
+}
+.the {
+	padding-left: 40px;
+	margin: -10px;
+}
+.green {
+	padding-left: 60px;
+	margin: -10px;
+}
+nav {
+	font-weight: none;
+	padding-right: 100px; 
+	order: 1 !important;
+	padding-right: 10px;
+}
+ul {
+	list-style-type: none;
+}
+.title h3 {
+	padding-left: 50px;
+	color: green;
+	font-size: 25px;
+	margin: 0px;
+}
+#map {
+    height: 100%;
+    
+}
+.escape {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-top: -150px;
+	position: relative;
+	background: lightgray;
+	width: 40px;
+	border-radius: 10px;
+	padding: 5px;
+}
+.escape a {
+	text-decoration: none;
+	font-weight: bolder;
+	color: black;
+}
+.escape:hover {
+	padding: 10px;
+	border-radius: 15px;
+}
+
+#map-section {
+	/*background-image: url("img/map-temp.png");*/
+	background-size: cover;
+	background-attachment: fixed;
+	height: 825px;
+	width: 100%;
+	background-color: green;
+	z-index: 5;
+}
+.zipcode {
+	margin-top: 120px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.zipcode input {
+	height: 40px;
+	width: 110px;
+	padding: 10px 18px 10px 18px;
+	font-size: 20px;
+	border-radius: 5px;
+}
+.submit {
+	text-align: center;
+}
+.submit button {
+	height: 40px;
+	width: 110px;
+	border-radius: 10px;
+	background-color: A4E405;
+}
+.navbar-with-title li {
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px; 
+}
+.navbar-with-title a {
+	text-decoration: none;
+	color: green;
+	/*font-weight: bold;*/
+	font-size: 20px;
+	padding: 0px 15px 0px 15px
+}
+.green-key {
+	position: absolute;
+	background-attachment: fixed;
+	padding: 20px;
+	width: 200px;
+	border: 4px solid rgba(177,189,163,0.7);
+	border-radius: 4px;
+	background-color: rgba(222, 236, 203, 0.7);
+	margin: 150px 0px 0px 60px;
+	height: 200px;
+	z-index: 4;
+}
+.green-key a {
+	text-decoration: none;
+	color: black;
+}
+.green-key li {
+	padding: 10px;
+}
+.green-key ul {
+	padding-left: 0px;
+}
+.green-key h2 {
+	margin: 0 auto;
+}
+.keys {
+	padding-left: 0px;
+}
+.green-key a:hover {
+	font-weight: bold;
+	color: 06BA07;
+}
+.description {
+	height: 300px;
+	width: 400px;
+	background-color: rgba(222, 236, 203, 0.7);
+	border: 4px solid rgba(177,189,163,0.7);
+	justify-content: flex-end;
+}
+.description h1 {
+	margin: 0 auto;
+	width: 285px;
+	text-align: center;
+	border-bottom: 1px solid lightgray;
+	padding: 10px 0px 15px 0px;
+	margin-bottom: 25px;
+}
+.brief {
+	margin: 20px;
+}
+#about {
+	margin: 0px;
+	padding-top: 30px;
+	background: linear-gradient(rgba(225,225,225,0.9), rgba(225,225,225,0.9)), url("img/backyard-bench.jpg");
+	background-size: cover;
+  	background-attachment: fixed;
+}
+#about h1 {
+	margin: 0px;
+	padding-top: 90px; 
+	text-align: center;
+}
+#about p {
+	display: flex;
+	font-family: 'Do Hyeon', sans-serif;
+	padding-bottom: 500px;
+	color: black;
+	text-align: center;
+	font-size: 18px;
+	margin: 10px 50px 0px 50px;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 200px;
+}
+
+#call-to-action {
+	font-family: 'Do Hyeon', sans-serif;
+	border-top: 4px solid black ;
+	color: black;
+	font-size: 12px;
+	padding: 0px 4px 10px 4px;
+}
+#new-spots {
+	height: 825px;
+	background: linear-gradient(rgba(177,195,154,0.9), rgba(177,195,154,0.5)), url("img/greenimg.jpg");
+	background-size: cover;
+  	background-attachment: fixed;
+}
+#new-spots h1 {
+	padding-top: 80px;
+	text-align: center;
+}
+#coupons {
+	height: 825px;
+	background: linear-gradient(rgba(225,225,225,0.9), rgba(225,225,225,0.9)), url("img/coupon-final.jpg");
+	background-size: cover;
+  	background-attachment: fixed;
+}
+#coupons h1 {
+	padding-top: 80px;
+	text-align: center;
+}
+#contact-me {
+	height: 825px;
+	background-color: rgb(177,195,154);
+}
+#contact-me h1 {
+	text-align: center;
+}
+.submit {
+	padding: 20px;
+}
+h1 {
+	font-size: 40px;
+	padding: 20px;
+	margin: 0;
+}
+
+/*.nav-mobile-items {
+	background-color: rgba(250, 250, 250, 0.7);
+}*/
+footer {
+	height: 60px;
+	background-color: rgb(177,195,154);
+}
+
+footer p {
+	padding-top: 15px;
+	margin-top: 0px;
+	padding-left: 30px; 
+}
+
+
+#burger-types {
+	margin: 10px;
+	cursor: pointer;
+	display: none;
+}
+#burger, #greenkey {
+	padding: 15px;
+	display: none;
+}
+
+.nav-mobile-items li {
+		padding-bottom: 10px;
+		
+	}
+.nav-mobile-items {
+	background-color: rgba(241,255,237,0.7);
+	margin-top: 75px;
+	height: 210px;
+	display: none;
+	text-align: center;
+	position: fixed;
+	top: 0;
+
+}
+.nav-mobile-items a {
+	text-decoration: none;
+	color: green;
+	font-size: 20px;
+
+}
+
+
+.gm-style-iw {
+
+}
+
+@media screen and (max-width: 1024px) {
+	#burger, #greenkey {
+		display: inline-block;
+		cursor: pointer;
+	}
+	.burger-types {
+		display: block;
+		margin-left: -55px;
+	}
+	div.burger-types {
+	margin-top: 5px;
+}
+	.title h3 {
+		font-size: 16px;
+		padding-left: 10px;
+		margin: 4px;
+	}
+	.green-key {
+		display: none;
+	}
+	nav {
+	display: none;
+	}
+	
+}
+
+
+
+
+	/*nav{
+		margin-left: -30px;
+	}
+}
+@media screen and (max-width: 1010px) {
+	nav{
+		margin-left: -40px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	nav{
+		margin-left: -50px;
+	}
+}
+@media screen and (max-width: 980px) {
+	nav{
+		margin-left: -70px;
+	}
+}
+@media screen and (max-width: 950px) {
+	nav{
+		margin-left: -90px;
+	}
+}
+@media screen and (max-width: 930px) {
+header.navbar-with-title {
+	flex: 2;
+	height: 60px;
+}
+.title {
+	flex: 1;
+
+}*/
+
+  
